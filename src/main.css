@@ -1,0 +1,47 @@
+@-ms-viewport{
+  width: device-width;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.bg-gray{
+	background-color: #F1F2F2;
+}
+.bg-pink{
+	background-color: #D83454;
+}
+.pink{
+	color: #D83454;
+}
+.gray{
+	color: #2B2A2C;
+}
+.white{
+	color: #FFFFFF;
+}
+.fullview{
+	height: 100vh;
+}
+.section{
+	display: table;
+	width: 100%;
+}
+.section .content{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.horizontal-list{
+	display: table;
+	width: 80%;
+	margin: auto;
+}
+.horizontal-list .item{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 250px;
+	height: 250px;
+	border: 1px solid #ccc;
+}
