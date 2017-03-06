@@ -1,3 +1,6 @@
+/**
+ * Fonts - Museo
+ */
 @font-face {
     font-family: 'museo300';
     src: url('fonts/Museo300-Regular-webfont.eot');
@@ -9,7 +12,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'museo500';
     src: url('fonts/Museo500-Regular-webfont.eot');
@@ -22,21 +24,27 @@
     font-style: normal;
 
 }
+/** Viewport fix for all device */
 @-ms-viewport{
   width: device-width;
 }
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: museo300;
 	color: #373638;
 }
+
 /** Fonts/Text */
 .fs-64{
 	font-size: 64px;
 }
 .fs-28{
 	font-size: 28px;
+}
+.fs-24{
+	font-size: 24px;
 }
 .fs-30{
 	font-size: 30px;
@@ -47,19 +55,22 @@ body{
 .center {
 	text-align: center;
 }
+.td-none{
+	text-decoration: none;
+}
 
 /** Colors */
 .bg-gray{
 	background-color: #F1F2F2;
 }
 .bg-pink{
-	background-color: #D83454;
+	background-color: #E22649;
 }
 .bg-white{
 	background-color: #FFFFFF;
 }
 .pink{
-	color: #D83454;
+	color: #E22649;
 }
 .gray{
 	color: #2B2A2C;
@@ -67,6 +78,7 @@ body{
 .white{
 	color: #FFFFFF;
 }
+
 /** Scaling */
 .fullview{
 	height: 100vh;
@@ -80,11 +92,10 @@ body{
 	text-align: center;
 	vertical-align: middle;
 }
-
 .arrow{
 	content: ' ';
 	background-image: url('assets/down.png');
-	background-color: #D83454;
+	background-color: #E22649;
 	background-position: center;
 	background-size: 15px 10px;
 	background-repeat: no-repeat;
@@ -102,6 +113,55 @@ body{
 	background-image: url('assets/down-black.png');
 	border-color: #373638;
 	background-color: transparent;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.valign-top{
+	vertical-align: top !important;
+}
+.valign-top .horizontal-list{
+	margin-top: 150px;
+}
+.valign-top h1{
+	margin-top: 60px;
+}
+.horizontal-list .item{
+	display: inline-block;
+	margin-left:30px; 
+	margin-right:30px; 
+}
+.bg-circle{
+	width: 200px;
+	height: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 150px;
+	border: 0;
+	display: inline-block;
+}
+.slogan-text{
+	width: 40%;
+	margin: auto;
+	font-weight:100;
+	font-size: 21px;
+}
+h1{
+	margin-top:0.4em;
+}
+h4{
+	font-size: 24px;
+	font-weight: 100;
+}
+.valign-top .slider{
+	min-height: 260px;
+}
+.slider .item{
+	margin-left:50px;
+	margin-right: 50px; 
+}
+.slider .item img{
+	width: 250px;
 }
 
 /** Images */
@@ -134,52 +194,14 @@ img.design_build{
 	background-image: url('assets/ux.png');
 	background-size: 95px 80px;
 }
-.map img{
+.map {
+	background-image: url('assets/map.png');
 	width: 100%;
-}
-
-.valign-top{
-	vertical-align: top !important;
-}
-.valign-top .horizontal-list{
-	margin-top: 150px;
-}
-.valign-top h1{
-	margin-top: 80px;
-}
-.horizontal-list .item{
-	display: inline-block;
-	margin-left:30px; 
-	margin-right:30px; 
-}
-.bg-circle{
-	width: 200px;
-	height: 200px;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 150px;
-	border: 0;
-	display: inline-block;
-}
-.slogan-text{
-	width: 40%;
-	margin: auto;
-	font-weight:100;
-	font-size: 21px;
-}
-h1{
-	margin-top:0.4em;
-}
-h4{
-	font-size: 24px;
-	font-weight: 100;
-}
-.slider .item{
-	margin-left:50px;
-	margin-right: 50px; 
-}
-.slider .item img{
-	width: 250px;
+	height: 350px;
+    background-size: 100vw 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
 
 /** Form */
@@ -222,12 +244,12 @@ input:focus, textarea:focus{
   color: #686768;
 }
 .btn {
-  background: #D83454;
-  background-image: -webkit-linear-gradient(top, #D83454, #D83454);
-  background-image: -moz-linear-gradient(top, #D83454, #D83454);
-  background-image: -ms-linear-gradient(top, #D83454, #D83454);
-  background-image: -o-linear-gradient(top, #D83454, #D83454);
-  background-image: linear-gradient(to bottom, #D83454, #D83454);
+  background: #E22649;
+  background-image: -webkit-linear-gradient(top, #E22649, #E22649);
+  background-image: -moz-linear-gradient(top, #E22649, #E22649);
+  background-image: -ms-linear-gradient(top, #E22649, #E22649);
+  background-image: -o-linear-gradient(top, #E22649, #E22649);
+  background-image: linear-gradient(to bottom, #E22649, #E22649);
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
   border-radius: 4px;
@@ -239,4 +261,228 @@ input:focus, textarea:focus{
 
 .btn:hover {
   text-decoration: none;
+}
+
+@media only screen (max-width: 1024px){
+	.bg-circle{
+		width: 150px;
+		height: 150px;
+	}	
+	.webdev-img{
+		background-size: 85px 65px;
+	}
+	.brush-img{
+		background-size: 65px 65px;
+	}
+	.Aa-img{
+		background-size: 80px 55px;
+	}
+	.ux-img{
+		background-size: 85px 70px;
+	}
+	.slider .item img{
+		width: 200px;
+	}
+	.arrow{
+		background-size: 10px 7px;
+		width: 35px;
+		height: 35px;
+	}
+	p {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	img.glass{
+		margin-top:150px; 
+	}
+	img.design{
+		width: 530px;
+	}
+	img.build{
+		width: 435px;
+	}
+	img.design_build{
+		width: 435px;
+	}
+	.valign-top .horizontal-list{
+		margin-top: 90px;
+	}
+	.valign-top h1{
+		margin-top: 30px;
+	}
+	.valign-top .slider{
+		min-height: 200px;
+	}
+}
+
+/** iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	.slogan-text{
+		width: 50%;	
+		margin-bottom: 200px;
+	}
+	p{
+		margin-bottom: 200px;
+	}
+	.fs-30{
+		font-size: 22px;
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.valign-top .horizontal-list{
+		margin-top: 50px;
+	}
+	.horizontal-list .item{
+		display: table;
+		width: 400px;
+		margin-left:auto; 
+		margin-right:auto; 
+	}
+	.horizontal-list .item:not(:first-child){
+		margin-top: 20px;
+	}
+	.horizontal-list .item div,.horizontal-list .item h4{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.horizontal-list .item h4{
+		padding-left: 20px;
+	}
+	.slider .item:not(:last-child){
+		margin-bottom: 130px;
+	}
+	.slider .item:last-child{
+		margin-bottom: 50px; 
+	}
+	.slider .item img{
+		width: 250px;
+	}
+	.map {
+		background-image: url('assets/map-sm.png');
+		height: 600px;
+		background-size: 100vh 600px;
+	}
+	input,textarea{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 360px;
+	}
+	button{
+		width: 360px;
+		font-family: museo300;
+	}
+	textarea{
+		height: 200px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 360px)
+and (max-device-width : 425px)
+and (orientation : portrait) {
+	.fs-64{
+		font-size: 55px;
+	}
+	.slogan-text{
+		width: 70%;	
+	}
+	img.design{
+		width: 300px;
+	}
+	img.build{
+		width: 300px;
+	}
+	img.design_build{
+		width: 300px;
+	}
+	.fs-30{
+		font-size: 18px;
+		width: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bg-circle{
+		width: 70px;
+		height: 70px;
+	}
+	.valign-top .horizontal-list{
+		margin-top: 20px;
+	}
+	.valign-top h1{
+		font-size: 30px;
+	}
+	.horizontal-list .item{
+		display: table;
+		width: 100%;
+		margin-left:20px; 
+		margin-right:auto; 
+	}
+	.horizontal-list .item:not(:first-child){
+		margin-top: 20px;
+	}
+	.horizontal-list .item div,.horizontal-list .item h4{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.horizontal-list .item h4{
+		padding-left: 20px;
+		font-size: 20px;
+	}
+	.webdev-img{
+		background-size: 45px 25px;
+	}
+	.brush-img{
+		background-size: 25px 25px;
+	}
+	.Aa-img{
+		background-size: 40px 15px;
+	}
+	.ux-img{
+		background-size: 45px 30px;
+	}
+	h1{
+		margin-top:0.1em;
+	}
+	.slider .item:not(:first-child){
+		display: none;
+	}
+	.slider .item{
+		margin-top: 80px; 
+	}
+	.slider .item img{
+		width: 250px;
+	}
+	.map {
+		background-image: url('assets/map-sm.png');
+		height: 350px;
+		background-size: 100vh 350px;
+	}
+	input,textarea{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 200px;
+		height: 40px;
+		font-size: 20px;
+	}
+	button{
+		width: 200px;
+		font-family: museo300;
+	}
+	.btn {
+		font-size: 20px;
+	}
+	textarea{
+		height: 200px;
+	}
+	.fs-24{
+		font-size: 20px;
+	}
 }
